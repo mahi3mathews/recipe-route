@@ -1,0 +1,98 @@
+@import "../../StyleVariables.scss";
+.registration {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    &-card.card.custom-card {
+        background-color: $darkAccent;
+        width: 500px;
+        border-radius: 10px;
+        overflow: hidden;
+        padding: 55px 55px 37px 55px;
+    }
+    &-header {
+        text-align: center;
+        padding: 34px 0;
+        &-icon {
+            width: 150px;
+        }
+        &-container {
+            text-align: center;
+        }
+    }
+    &-container {
+        background-image: url("https://images.pexels.com/photos/2802527/pexels-photo-2802527.jpeg?cs=srgb&dl=pexels-shantanu-pal-2802527.jpg&fm=jpg");
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        z-index: 1;
+        height: 100%;
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(248, 247, 244, 0.8);
+        }
+    }
+    &-input-group {
+        margin: 20px 0;
+        &.country-postcode {
+            display: flex;
+            justify-content: space-evenly;
+            > .input:first-child {
+                margin-right: 20px;
+            }
+        }
+    }
+    &-submit-group {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 40px;
+        &.second-form {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+    &-submit {
+        &.bttn {
+            min-width: 120px;
+            border-radius: 25px;
+        }
+    }
+    &-register {
+        &-container {
+            display: flex;
+            margin-top: 90px;
+            justify-content: center;
+            align-items: end;
+        }
+        margin-left: 10px;
+        padding: 0 !important;
+    }
+    &-progress-bar {
+        width: 100%;
+        // min-width: 100%;
+        background-color: $lightAccent;
+        border-radius: 50px;
+        max-height: 10px;
+        min-height: 10px;
+
+        > div {
+            background-color: $primary !important;
+            border-radius: 50px;
+            height: 10px;
+        }
+    }
+}

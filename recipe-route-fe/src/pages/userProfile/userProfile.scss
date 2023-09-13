@@ -1,0 +1,109 @@
+.user-profile {
+    margin: 40px;
+    &-container {
+        display: flex;
+        @media screen and (max-width: 900px) {
+            flex-direction: column;
+            max-width: 550px;
+            margin: 0 auto;
+        }
+    }
+    .onboarding {
+        margin: 0;
+        margin-left: 20px;
+        @media screen and (max-width: 900px) {
+            margin-left: 0;
+            margin-top: 30px;
+        }
+        flex: 1;
+        padding: 0;
+        .custom-card {
+            margin: 0;
+            .accordion-content {
+                padding: 10px 15px;
+            }
+        }
+    }
+    .order-list {
+        margin-top: 30px;
+    }
+    &-order-container {
+        flex: 2;
+    }
+}
+.user-details {
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        &-edit {
+            width: 20px;
+        }
+    }
+    &-personal-details {
+        display: flex;
+        margin: 20px 0;
+        align-items: flex-start;
+    }
+    &-submit-btn {
+        margin-top: 20px;
+    }
+    &-name {
+        flex: 1;
+    }
+    &-phone {
+        &-number {
+            display: flex;
+        }
+        &-tooltip-icon {
+            width: 20px;
+            margin-bottom: 2px;
+            margin-left: 8px;
+        }
+    }
+    &-image {
+        &-container {
+            margin-right: 20px;
+            text-align: center;
+        }
+    }
+    &-row:not(:first-child) {
+        margin: 25px 0;
+    }
+
+    &-address {
+        &-empty {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 20px 0;
+            > .header {
+                margin: 15px 0;
+            }
+        }
+    }
+
+    &-ph-number-content {
+        > b {
+            margin-right: 8px;
+        }
+    }
+}
+.add-address {
+    display: flex;
+    flex-direction: column;
+    &-last-line {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-submit-btn {
+        margin: 20px auto 0;
+        width: fit-content;
+    }
+}
+
+.address-details {
+    margin-top: 15px;
+    .header {
+        margin: 5px;
+    }
+}

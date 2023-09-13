@@ -1,0 +1,16 @@
+.idea
+utils/__pycache__
+service/__pycache__
+schemas/__pycache__
+repo/__pycache__
+enums/__pycache__
+db/__pycache__
+data_model/__pycache__
+rs_model
+app_controller/__pycache__
+schemas/__pycache__/users.cpython-310.pyc
+service/__pycache__/user_service.cpython-310.pyc
+service/__pycache__/store_service.cpython-310.pyc
+schemas/__pycache__/__init__.cpython-310.pyc
+tests/__pycache__
+TestResults.html

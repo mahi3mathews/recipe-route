@@ -1,0 +1,66 @@
+@import "../../StyleVariables.scss";
+
+.checkbox {
+    label {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+    input[type="checkbox"] {
+        /* removing default appearance */
+        -webkit-appearance: none;
+        appearance: none;
+        /* creating a custom design */
+        width: 1.6em;
+        height: 1.6em;
+        border-radius: 0.15em;
+        margin-right: 0.5em;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+        &.checked {
+            &::before {
+                content: "\2714";
+                font-size: 1.5em;
+                position: absolute;
+                right: 1px;
+                top: -5px;
+            }
+        }
+        &:disabled {
+            border-color: $lightAccent;
+            background-color: $lightAccent;
+            & + span {
+                color: $lightAccent;
+            }
+        }
+    }
+
+    &.primary input[type="checkbox"] {
+        border: 0.15em solid $primary;
+        &.checked {
+            background-color: $primary;
+            &::before {
+                color: $lightAccent;
+            }
+        }
+    }
+    &.lightAccent input[type="checkbox"] {
+        border: 0.15em solid $lightAccent;
+        &.checked {
+            background-color: $lightAccent;
+            &::before {
+                color: $darkAccent;
+            }
+        }
+    }
+    &.darkAccent input[type="checkbox"] {
+        border: 0.15em solid $darkAccent;
+        &.checked {
+            background-color: $darkAccent;
+            &::before {
+                color: $lightAccent;
+            }
+        }
+    }
+}

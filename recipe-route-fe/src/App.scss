@@ -1,0 +1,33 @@
+@import "./StyleVariables.scss";
+.app {
+    font-family: "Ubuntu", sans-serif !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: $lightShade;
+    &-body {
+        overflow-y: auto;
+        width: 100%;
+        flex: 9;
+    }
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        border-radius: 100px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: $darkAccent;
+        border-radius: 100px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: $darkAccent;
+    }
+}

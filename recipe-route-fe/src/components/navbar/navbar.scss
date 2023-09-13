@@ -1,0 +1,84 @@
+@import "../../StyleVariables.scss";
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    &-expand.navbar {
+        padding: 0;
+    }
+    &-content-wrapper {
+        display: flex;
+        width: 100%;
+    }
+    &-container {
+        background-color: $darkAccent;
+        padding: 15px 30px;
+    }
+    &-nav {
+        width: 100%;
+        justify-content: flex-end;
+    }
+    &-brand {
+        display: flex;
+        align-items: center;
+        padding: 0 !important;
+        cursor: pointer;
+    }
+    &-logo {
+        margin-right: 10px;
+        width: 80px;
+        @media screen and (max-width: 600px) {
+            width: 60px;
+        }
+    }
+    a.navbar-navlink {
+        text-decoration: none;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    &-navlink {
+        margin: 13px 10px;
+        @media screen and (max-width: 1186px) {
+            margin: 10px;
+        }
+        &-title {
+            display: flex;
+            align-items: center;
+        }
+        &-img {
+            max-width: 40px;
+            margin: 0 60px 0 30px;
+        }
+        &-icon {
+            height: 72px;
+            width: 84px;
+        }
+        &-icon-link {
+            height: 35px;
+        }
+    }
+    &-navlink:last-child {
+        flex: 1;
+        @media screen and (min-width: 901px) {
+            justify-content: flex-end;
+        }
+    }
+    &-navlink-mob.navbar-nav {
+        display: flex;
+        flex-direction: column !important;
+    }
+    &-menu {
+        &-bar {
+            flex: 1;
+            justify-content: flex-end;
+            display: flex;
+        }
+        &-icon {
+            width: 40px;
+            @media screen and (max-width: 350px) {
+                width: 26px;
+            }
+        }
+    }
+}

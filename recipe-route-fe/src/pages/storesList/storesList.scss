@@ -1,0 +1,34 @@
+@import "../../StyleVariables.scss";
+
+.stores-list {
+    margin: 40px;
+    &-header {
+        text-align: center;
+    }
+    &-content {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px 0;
+    }
+    &-brandimg {
+        width: 150px;
+        height: 120px;
+        &-icon {
+            width: inherit;
+            border-radius: 6px;
+            height: inherit;
+        }
+
+        margin: 10px 0;
+    }
+    &-store-card.custom-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // max-width: 100px;
+        margin: 0 10px;
+    }
+    &-store-address {
+        text-align: center;
+    }
+}

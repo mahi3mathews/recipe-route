@@ -1,0 +1,33 @@
+@import "../../StyleVariables.scss";
+.custom-card.card {
+    border-radius: 30px;
+    background-color: $lightAccent;
+    box-shadow: 4px 6px 10px rgba(43, 70, 179, 0.05),
+        0 15px 40px rgba(166, 173, 201, 0.2);
+    padding: 30px;
+    max-width: inherit;
+    &.cursor:not(.disabled) {
+        cursor: pointer;
+    }
+    &.disabled {
+        background-color: $disabled;
+    }
+    &.selected.darkAccent {
+        background-color: $darkAccent;
+        box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56),
+            0 4px 25px 0px rgba(0, 0, 0, 0.12),
+            0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    }
+    &.selected.primary {
+        background-color: $primary;
+        box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56),
+            0 4px 25px 0px rgba(0, 0, 0, 0.12),
+            0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    }
+    &.selected.primary-faded {
+        background-color: rgba(229, 94, 58, 0.8);
+        box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56),
+            0 4px 25px 0px rgba(0, 0, 0, 0.12),
+            0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    }
+}

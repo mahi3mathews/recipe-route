@@ -1,0 +1,9 @@
+.user-activity {
+    &-total {
+        display: flex;
+        margin: 20px 0;
+        &-amt {
+            margin-left: 5px;
+        }
+    }
+}

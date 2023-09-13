@@ -1,0 +1,14 @@
+@import "../../StyleVariables.scss";
+
+.pagination {
+    .page-item {
+        > .page-link {
+            color: $darkAccent;
+        }
+        &.active > .page-link {
+            background-color: $primary;
+            border-color: $primary;
+            color: $lightShade;
+        }
+    }
+}

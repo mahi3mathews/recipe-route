@@ -1,0 +1,10 @@
+@import "../../StyleVariables.scss";
+.custom-toaster {
+    padding: 30px;
+    background-color: $lightShade !important;
+    display: flex;
+    align-items: center;
+    &-header {
+        margin-left: 20px;
+    }
+}

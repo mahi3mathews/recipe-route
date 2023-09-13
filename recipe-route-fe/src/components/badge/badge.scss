@@ -1,0 +1,26 @@
+@import "../../StyleVariables.scss";
+
+.custom-badge {
+    border-radius: 20px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    &.primary {
+        background-color: $primary;
+    }
+    &.success {
+        background-color: $success;
+    }
+    &.error {
+        background-color: $errorColor;
+    }
+    &.warning {
+        background-color: $warning;
+    }
+    &.disabled {
+        background-color: $disabled;
+    }
+    &.darkAccent {
+        background-color: $darkAccent;
+    }
+}

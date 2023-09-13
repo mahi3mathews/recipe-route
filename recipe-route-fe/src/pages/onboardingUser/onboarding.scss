@@ -1,0 +1,19 @@
+@import "../../StyleVariables.scss";
+
+.onboarding {
+    padding: 40px;
+    max-width: 550px;
+    margin: 0 auto;
+    .custom-card {
+        margin: 20px 0;
+    }
+    &-total-selected {
+        padding: 20px;
+        text-align: center;
+    }
+    &-allergen {
+        &-item {
+            margin: 10px 0;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@import "../../StyleVariables.scss";
+
+.recipe-details-modal {
+    &-fav {
+        margin-left: 10px;
+    }
+    .recipe-row {
+        margin: 20px 0;
+    }
+    .custom-modal {
+        &-body {
+            padding: 0;
+        }
+    }
+}

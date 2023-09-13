@@ -1,0 +1,133 @@
+@import "../../StyleVariables.scss";
+
+.user-home {
+    margin: 40px;
+    &-planner {
+        &-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-left-icon {
+            width: 45px;
+            rotate: 90deg;
+        }
+        &-right-icon {
+            width: 45px;
+            rotate: 270deg;
+        }
+    }
+    &-header {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+.add-meal-plan-modal {
+    .custom-modal-body.modal-body {
+        max-height: 500px;
+        overflow-y: scroll;
+    }
+    .recipe-card.custom-card {
+        margin: 30px 0;
+        background-color: $fadedCardAccent;
+    }
+}
+.meal-planner-table {
+    &-container {
+        margin: 10px auto;
+        max-width: 800px;
+    }
+    &-header {
+        padding: 10px 0 40px;
+        .header:first-child {
+            margin-bottom: 10px;
+        }
+    }
+    &-card.custom-card {
+        background-color: $fadedWarningAccent;
+    }
+    &-day {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &-skeleton {
+        max-width: inherit;
+        &-title.skeleton {
+            margin-bottom: 20px;
+            width: 140px;
+        }
+    }
+}
+.table.meal-planner-table {
+    th,
+    td {
+        background-color: transparent;
+        border: none;
+    }
+    th {
+        text-align: center;
+    }
+    tr {
+        height: 1px;
+    }
+    td {
+        vertical-align: middle;
+        height: inherit;
+        .custom-card {
+            &:not(.disabled) {
+                height: 100%;
+                min-height: 100%;
+            }
+            text-align: center;
+        }
+        border: none;
+        border-right: 3px solid $darkAccent;
+        &:first-child,
+        &:last-child {
+            border: none;
+        }
+        padding: 5px 10px;
+    }
+}
+
+.recipe-card.custom-card.card {
+    padding: 20px;
+    .recipe-card {
+        &-select {
+            min-width: fit-content;
+            width: fit-content;
+            margin: 0 auto;
+        }
+        &-title {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            &-icon {
+                &.open {
+                    rotate: 180deg;
+                }
+                transition: 0.5s ease-in-out;
+            }
+        }
+        &-calories {
+            margin: 10px 0;
+        }
+        &-checkbox {
+            margin: 10px 0 20px;
+
+            &.checkbox input[type="checkbox"] {
+                width: 1em;
+                height: 1em;
+            }
+            &.checkbox input[type="checkbox"].checked::before {
+                font-size: 0.8em;
+                position: absolute;
+                right: -4px;
+                top: -3px;
+            }
+        }
+    }
+}

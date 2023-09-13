@@ -1,0 +1,135 @@
+@import "../../StyleVariables.scss";
+.custom-dropdown {
+    width: 100%;
+    position: relative;
+    .menu {
+        z-index: 199;
+        width: inherit;
+        max-height: 200px;
+        overflow-y: auto;
+        position: absolute;
+        transform: translateY(4px);
+        border-radius: 5px;
+        background-color: $lightAccent;
+        &.hide {
+            display: none;
+        }
+        &.show {
+            display: flex;
+            flex-direction: column;
+        }
+        &-item {
+            margin: 10px;
+            cursor: pointer;
+        }
+        &-container {
+            width: 100%;
+        }
+    }
+    &-toggle-chevron {
+        margin-top: 5px;
+    }
+
+    .dropdown-toggle {
+        width: 100%;
+        padding: 15px;
+        font-size: 14px;
+        border: none;
+        background-color: transparent;
+        border-bottom: 2px solid $darkAccent;
+        text-align: left;
+        border-radius: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &::after {
+            display: none;
+        }
+
+        &.error {
+            border-bottom: 2px solid $errorColor;
+        }
+        &.primary-filler {
+            background-color: $primary;
+            border-radius: 10px;
+            &:active {
+                background-color: $primary;
+                opacity: 0.9;
+            }
+        }
+        &.lightShade-filler {
+            background-color: $lightShade;
+            border-radius: 10px;
+            &:active {
+                background-color: $lightShade;
+                opacity: 0.9;
+            }
+        }
+        &.lightAccent-filler {
+            background-color: $lightAccent;
+            border-radius: 10px;
+            &:active {
+                background-color: $lightAccent;
+                opacity: 0.9;
+            }
+        }
+        &.darkAccent-filler {
+            background-color: $darkAccent;
+            border-radius: 10px;
+            &:active {
+                background-color: $darkAccent;
+                opacity: 0.9;
+            }
+        }
+        &.darkAccent-filler {
+            background-color: $darkAccent;
+            border-radius: 10px;
+            &:active {
+                background-color: $darkAccent;
+                opacity: 0.9;
+            }
+        }
+        &.primary {
+            border-bottom: 2px solid $primary;
+            &:hover {
+                border-bottom: 2px solid $primary;
+            }
+        }
+        &.lightShade {
+            border-bottom: 2px solid $lightShade;
+            &:hover {
+                border-bottom: 2px solid $lightShade;
+            }
+        }
+        &.lightAccent {
+            border-bottom: 2px solid $lightAccent;
+            &:hover {
+                border-bottom: 2px solid $lightAccent;
+            }
+        }
+        &.darkAccent {
+            border-bottom: 2px solid $darkAccent;
+            &:hover {
+                border-bottom: 2px solid $darkAccent;
+            }
+        }
+        &.transparent {
+            border-bottom: none;
+            &:hover {
+                border-bottom: none;
+            }
+        }
+        &-toggle {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+        }
+        &-toggle-text {
+            flex: 1;
+        }
+
+        &-error {
+            margin-top: 5px;
+        }
+    }
+}

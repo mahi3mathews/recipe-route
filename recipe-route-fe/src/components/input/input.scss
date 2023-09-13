@@ -1,0 +1,75 @@
+@import "../../StyleVariables.scss";
+.input {
+    &-field.form-control {
+        &:focus {
+            border: none;
+            box-shadow: none;
+        }
+        flex: 1;
+        padding: 15px;
+        font-size: 16px;
+        &::placeholder {
+            font-family: "Ubuntu", sans-serif;
+            font-size: 16px;
+            color: $fadedDarkAccent;
+        }
+        border: none;
+        background-color: transparent !important;
+        &:focus-visible {
+            outline: none;
+        }
+    }
+    &-field-error {
+        margin-top: 15px;
+    }
+    &-container {
+        display: flex;
+        border-bottom: 2px solid $darkAccent;
+        justify-content: space-between;
+        &.error {
+            border-bottom: 2px solid $errorColor;
+            .input-field {
+                color: $errorColor;
+                &::placeholder {
+                    color: $errorColor;
+                }
+            }
+        }
+        &.primary {
+            border-bottom: 2px solid $primary;
+            .input-field {
+                color: $primary;
+                &::placeholder {
+                    color: $primary;
+                }
+            }
+        }
+        &.lightShade {
+            border-bottom: 2px solid $lightShade;
+            .input-field {
+                color: $lightShade;
+                &::placeholder {
+                    color: $lightShade;
+                }
+            }
+        }
+        &.lightAccent {
+            border-bottom: 2px solid $lightAccent;
+            .input-field {
+                color: $lightAccent;
+                &::placeholder {
+                    color: $lightAccent;
+                }
+            }
+        }
+        &.darkAccent {
+            border-bottom: 2px solid $darkAccent;
+            .input-field {
+                color: $darkAccent;
+                &::placeholder {
+                    color: $darkAccent;
+                }
+            }
+        }
+    }
+}

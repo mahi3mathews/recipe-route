@@ -1,0 +1,45 @@
+@import "../../StyleVariables.scss";
+
+.bttn {
+    font-family: "Ubuntu", sans-serif;
+    cursor: pointer;
+    &-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .spinner-border {
+            margin: 0 auto;
+        }
+    }
+    border-radius: 6px;
+    padding: 13px 20px;
+    text-align: center;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+
+    &-pre-icon {
+        margin-top: 3px;
+        margin-right: 5px;
+    }
+    &-error {
+        margin-top: 15px;
+        text-align: center;
+    }
+    &.primary {
+        background-color: $primary;
+    }
+    &.lightAccent {
+        background-color: $lightAccent;
+    }
+    &.lightShade {
+        background-color: $lightShade;
+    }
+    &.darkAccent {
+        background-color: $darkAccent;
+    }
+    &.transparent {
+        background-color: transparent;
+    }
+}

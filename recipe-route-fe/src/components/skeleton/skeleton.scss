@@ -1,0 +1,24 @@
+@import "../../StyleVariables.scss";
+
+.skeleton {
+    @keyframes shine {
+        to {
+            background-position: 100% 0, 0 0;
+        }
+    }
+
+    width: 100px;
+    height: 15px;
+    display: block;
+    background: linear-gradient(
+            to right,
+            rgba(223, 217, 217, 0.877),
+            rgba(255, 255, 255, 0.5) 50%,
+            $fadedLightAccent 80%
+        ),
+        $lightAccent;
+    background-repeat: repeat-y;
+    background-size: 50px 200px;
+    background-position: 0 0;
+    animation: shine 0.9s infinite;
+}

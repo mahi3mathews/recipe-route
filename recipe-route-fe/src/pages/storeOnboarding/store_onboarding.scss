@@ -1,0 +1,77 @@
+@import "../../StyleVariables.scss";
+
+.store-onboarding {
+    margin: 40px;
+    &-header,
+    &-header-subtitle {
+        text-align: center;
+        margin-top: 9px;
+    }
+    &-image {
+        &-label {
+            display: flex;
+            align-items: center;
+
+            &-btn {
+                margin-right: 10px;
+                border-radius: 10px;
+                width: fit-content;
+                background-color: $lightAccent;
+                padding: 20px;
+                &:hover {
+                    background-color: $darkAccent !important;
+                    color: $primary;
+                    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56),
+                        0 4px 25px 0px rgba(0, 0, 0, 0.12),
+                        0 8px 10px -5px rgba(0, 0, 0, 0.2);
+                }
+            }
+            padding: 15px 0;
+            cursor: pointer;
+        }
+        &-upload {
+            display: flex;
+            align-items: center;
+        }
+        &-input {
+            display: none !important;
+        }
+    }
+    &-content-card.custom-card {
+        max-width: 700px;
+        margin: 20px auto 0;
+        background-color: $fadedCardAccent;
+    }
+    &-submit-btn {
+        max-width: 500px;
+        margin: 0 auto;
+        &:hover {
+            background-color: $primary;
+            color: $lightShade;
+        }
+    }
+    .store-inventory {
+        margin-top: 20px;
+
+        .row-header {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid $darkAccent;
+            background-color: $fadedCardAccent;
+        }
+        .row-cell {
+            flex: 1;
+            border-left: 1px solid $darkAccent;
+            border-right: 1px solid $darkAccent;
+        }
+        &-example {
+            margin: 20px 0;
+        }
+        ol > li {
+            margin: 5px 0;
+        }
+        &-instructions {
+            margin-left: 30px;
+        }
+    }
+}

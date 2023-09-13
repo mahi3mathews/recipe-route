@@ -1,0 +1,64 @@
+@import "../../StyleVariables.scss";
+
+.checkout {
+    &-container {
+        margin: 40px;
+    }
+    display: flex;
+    margin: 20px 0;
+    &-left {
+        flex: 2;
+        margin-right: 20px;
+    }
+    &-right {
+        flex: 1;
+    }
+    .delivery-pickup {
+        margin-bottom: 20px;
+        &-header {
+            display: flex;
+            align-items: center;
+        }
+        &-tooltip-icon {
+            width: 20px;
+            margin-left: 10px;
+        }
+        &-store-icon {
+            width: 100px;
+            height: 90px;
+            margin-right: 10px;
+        }
+        &-store-details {
+            display: flex;
+            align-items: center;
+        }
+        &-store-address-text {
+            margin: 20px 0 15px;
+        }
+    }
+    .stripe-payment {
+        margin: 20px 0;
+        &-submit {
+            margin: 30px 0 0;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .order-summary {
+        &-header {
+            margin-bottom: 20px;
+        }
+        &-content {
+            display: flex;
+            justify-content: space-between;
+        }
+        &-total {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .divider {
+        border-bottom: 1px solid $darkAccent;
+        margin: 10px 0;
+    }
+}
